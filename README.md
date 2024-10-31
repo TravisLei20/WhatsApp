@@ -1,7 +1,8 @@
 # nextjs-whatsapp-clone
-
+[Youtube Video](https://www.youtube.com/watch?v=keYFkLycaDg&t=5507s)
 
 # Progress
+
 ## Day 1:
 Start Time: 0:00:00
 
