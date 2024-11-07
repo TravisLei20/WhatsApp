@@ -10,3 +10,11 @@ Finish Time: 1:04:40
 
 Have the basic login and onboarding screen.
 Firebase setup.
+
+
+## Day 2:
+Start Time: 1:04:40
+
+Finish Time: 1:51:07
+
+Adding avatar capabilities.
