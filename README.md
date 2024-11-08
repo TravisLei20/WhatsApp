@@ -25,6 +25,6 @@ Adding avatar capabilities.
 
 Start Time: 1:51:07
 
-Finish Time: 2:44:30
+Finish Time: 3:33:40
 
-Finished login and onboarding screen and logic.
+Finished login and onboarding screen and logic. Added basic chat screen.
