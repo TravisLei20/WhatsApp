@@ -28,3 +28,11 @@ Start Time: 1:51:07
 Finish Time: 3:33:40
 
 Finished login and onboarding screen and logic. Added basic chat screen.
+
+## Day 4:
+
+Start Time: 3:33:40
+
+Finish Time: 4:14:10
+
+Chat screen and sidebars.
