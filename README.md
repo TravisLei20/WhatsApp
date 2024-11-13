@@ -33,6 +33,6 @@ Finished login and onboarding screen and logic. Added basic chat screen.
 
 Start Time: 3:33:40
 
-Finish Time: 4:14:10
+Finish Time: 4:48:18
 
-Chat screen and sidebars.
+Chat screen and sidebars. Some Chat features.
