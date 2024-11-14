@@ -36,3 +36,11 @@ Start Time: 3:33:40
 Finish Time: 4:48:18
 
 Chat screen and sidebars. Some Chat features.
+
+## Day 5:
+
+Start Time: 4:48:18
+
+Finish Time: 5:34:09
+
+Added socket features in chat screen. Added status and time to chat messages. Added emojis.
