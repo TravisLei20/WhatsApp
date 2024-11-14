@@ -11,6 +11,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use("/upload/images", express.static("upload/images"));
+
 app.use("/api/auth", AuthRoutes);
 app.use("/api/messages", MessageRoutes);
 
