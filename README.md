@@ -44,3 +44,11 @@ Start Time: 4:48:18
 Finish Time: 5:34:09
 
 Added socket features in chat screen. Added status and time to chat messages. Added emojis.
+
+## Day 6:
+
+Start Time: 5:34:09
+
+Finish Time: 6:50:20
+
+Added Image features to chat screen. Working on audio.
