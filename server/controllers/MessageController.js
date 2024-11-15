@@ -98,9 +98,37 @@ export const addImageMessage = async (req, res, next) => {
         });
         return res.status(201).json({ message });
       }
-      return res.status(404).send("from, to is required");
+      return res.status(404).send("from, to is required - image");
     }
     return res.status(400).send("Image is required");
+  } catch (err) {
+    next(err);
+  }
+};
+
+export const addAudioMessage = async (req, res, next) => {
+  try {
+    if (req.file) {
+      const date = Date.now();
+      let fileName = "upload/recordings/" + date + req.file.originalname;
+      renameSync(req.file.path, fileName);
+      const prisma = getPrismaInstance();
+      const { from, to } = req.query;
+
+      if (from && to) {
+        const message = await prisma.messages.create({
+          data: {
+            message: fileName,
+            sender: { connect: { id: parseInt(from) } },
+            receiver: { connect: { id: parseInt(to) } },
+            type: "audio",
+          },
+        });
+        return res.status(201).json({ message });
+      }
+      return res.status(404).send("from, to is required - audio");
+    }
+    return res.status(400).send("audio is required");
   } catch (err) {
     next(err);
   }
