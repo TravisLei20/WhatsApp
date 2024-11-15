@@ -54,10 +54,8 @@ function VoiceMessage({ message }) {
     const audioURL = `${HOST}/${message.message}`;
     const audio = new Audio(audioURL);
     setAudioMessage(audio);
-    console.log(audioMessage);
 
     const initializeWaveformAndLoad = () => {
-      console.log("initializing waveform");
       if (waveform.current && waveFormRef.current) {
         waveform.current.load(audioURL);
         waveform.current.on("ready", () => {
@@ -117,7 +115,14 @@ function VoiceMessage({ message }) {
       }`}
     >
       <div>
-        <Avatar type="lg" image={currentChatUser?.profilePicture} />
+        <Avatar
+          type="lg"
+          image={
+            message.senderId === currentChatUser.id
+              ? currentChatUser?.profilePicture
+              : userInfo?.profileImage
+          }
+        />
       </div>
       <div className="cursor-pointer text-xl">
         {!isPlaying ? (
