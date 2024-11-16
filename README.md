@@ -57,6 +57,6 @@ Added Image features to chat screen. Working on audio.
 
 Start Time: 6:50:20
 
-Finish Time: 8:00:50
+Finish Time: 8:13:30
 
-Audio Finished. Fixed Audio Avatar Issue. Chat message search completed. Contacts on left bar.
+Audio Finished. Fixed Audio Avatar Issue. Chat message search completed. Contacts on left bar. Side bar message status stuff - checks, unread messages, etc.
