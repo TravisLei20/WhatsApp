@@ -220,7 +220,7 @@ export const getInitialContactsWithMessages = async (req, res, next) => {
           };
         }
         users.set(calculatedId, { ...user });
-      } else if (message.status !== "read" && !isSender) {
+      } else if (msg.messageStatus !== "read" && !isSender) {
         const user = users.get(calculatedId);
         users.set(calculatedId, {
           ...user,
@@ -241,6 +241,8 @@ export const getInitialContactsWithMessages = async (req, res, next) => {
         },
       });
     }
+
+    console.log("users.values", users.values());
 
     return res.status(200).json({
       users: Array.from(users.values()),
