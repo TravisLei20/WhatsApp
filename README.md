@@ -52,3 +52,11 @@ Start Time: 5:34:09
 Finish Time: 6:50:20
 
 Added Image features to chat screen. Working on audio.
+
+## Day 7:
+
+Start Time: 6:50:20
+
+Finish Time: 8:00:50
+
+Audio Finished. Fixed Audio Avatar Issue. Chat message search completed. Contacts on left bar.
