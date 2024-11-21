@@ -242,8 +242,6 @@ export const getInitialContactsWithMessages = async (req, res, next) => {
       });
     }
 
-    console.log("users.values", users.values());
-
     return res.status(200).json({
       users: Array.from(users.values()),
       onlineUsers: Array.from(onlineUsers.keys()),

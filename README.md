@@ -60,3 +60,19 @@ Start Time: 6:50:20
 Finish Time: 8:13:30
 
 Audio Finished. Fixed Audio Avatar Issue. Chat message search completed. Contacts on left bar. Side bar message status stuff - checks, unread messages, etc.
+
+## Day 8:
+
+Start Time: 8:13:30
+
+Finish Time: 8:32:15
+
+Finished sidebar searches.
+
+## Day 9:
+
+Start Time: 8:32:15
+
+Finish Time: 9:22:30
+
+Working on voice and video calls.
