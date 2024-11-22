@@ -105,7 +105,7 @@ function Main() {
         dispatch({
           type: reducerCases.SET_INCOMING_VIDEO_CALL,
           incomingVideoCall: {
-            from,
+            ...from,
             roomId,
             callType,
           },
