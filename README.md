@@ -84,3 +84,11 @@ Start Time: 9:22:30
 Finish Time: 10:01:15
 
 Working on voice and video calls. Encountering errors.
+
+## Day 11:
+
+Start Time: 10:01:15
+
+Finish Time: Ended Video.
+
+Finished the video. Still having issues with audio/video call. Has user online/offline icon. Still needs messages to be updated in real time.
