@@ -38,7 +38,7 @@ function Main() {
     if (redirectLogins) {
       router.push("/login");
     }
-  }, []);
+  });
 
   onAuthStateChanged(firebaseAuth, async (currentUser) => {
     if (!currentUser) {
@@ -121,6 +121,13 @@ function Main() {
       socket.current.on("video-call-rejected", () => {
         dispatch({
           type: reducerCases.END_CALL,
+        });
+      });
+
+      socket.current.on("online-users", ({ onlineUsers }) => {
+        dispatch({
+          type: reducerCases.SET_ONLINE_USERS,
+          onlineUsers,
         });
       });
 
