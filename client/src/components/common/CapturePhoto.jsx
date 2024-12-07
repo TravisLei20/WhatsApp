@@ -19,7 +19,7 @@ function CapturePhoto({ hide, setImage }) {
         stream.getTracks().forEach((track) => track.stop());
       }
     };
-  });
+  }, []);
 
   const capturePhoto = () => {
     const canvas = document.createElement("canvas");

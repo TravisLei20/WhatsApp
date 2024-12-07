@@ -84,7 +84,7 @@ function MessageBar() {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  });
+  }, []);
 
   const handleEmojiModal = () => {
     setShowEmojiPicker(!showEmojiPicker);

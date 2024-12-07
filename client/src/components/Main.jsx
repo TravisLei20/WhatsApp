@@ -38,7 +38,7 @@ function Main() {
     if (redirectLogins) {
       router.push("/login");
     }
-  });
+  }, []);
 
   onAuthStateChanged(firebaseAuth, async (currentUser) => {
     if (!currentUser) {

@@ -64,7 +64,7 @@ function CaptureAudio({ hide }) {
     return () => {
       wavesurfer.destroy();
     };
-  });
+  }, []);
 
   useEffect(() => {
     if (waveform) {
