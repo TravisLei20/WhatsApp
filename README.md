@@ -92,3 +92,7 @@ Start Time: 10:01:15
 Finish Time: Ended Video.
 
 Finished the video. Still having issues with audio/video call. Has user online/offline icon. Still needs messages to be updated in real time.
+
+## Day 12:
+
+Fixed the sending audio clip error. Needs to be able to send on "enter" button and delete the message/audio clip when sent.
