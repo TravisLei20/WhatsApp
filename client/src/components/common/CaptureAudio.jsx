@@ -21,7 +21,7 @@ function CaptureAudio({ hide }) {
   const [recordedAudio, setRecordedAudio] = useState(null);
   const [waveform, setWaveform] = useState(null);
   const [renderedAudio, setRenderedAudio] = useState(null);
-  const [recordingDuraton, setRecordingDuraton] = useState(0);
+  const [recordingDuration, setRecordingDuration] = useState(0);
   const [currentPlaybackTime, setCurrentPlaybackTime] = useState(0);
   const [totalDuration, setTotalDuration] = useState(0);
 
@@ -33,7 +33,7 @@ function CaptureAudio({ hide }) {
     let interval;
     if (isRecording) {
       interval = setInterval(() => {
-        setRecordingDuraton((prev) => {
+        setRecordingDuration((prev) => {
           setTotalDuration(prev + 1);
           return prev + 1;
         });
@@ -85,7 +85,7 @@ function CaptureAudio({ hide }) {
   }, [recordedAudio]);
 
   const handleStartRecording = () => {
-    setRecordingDuraton(0);
+    setRecordingDuration(0);
     setCurrentPlaybackTime(0);
     setTotalDuration(0);
     setIsRecording(true);
@@ -176,6 +176,11 @@ function CaptureAudio({ hide }) {
           },
           fromSelf: true,
         });
+        setRecordedAudio(null);
+        setWaveform(null);
+        setRecordingDuration(0);
+        setIsRecording(false);
+        hide();
       }
     } catch (e) {
       console.log(e);
@@ -203,7 +208,7 @@ function CaptureAudio({ hide }) {
       <div className="mx-4 py-2 px-4 text-white text-lg flex gap-3 justify-center items-center bg-search-input-container-background rounded-full drop-shadow-lg">
         {isRecording ? (
           <div className="text-red-500 animate-pulse 2-60 text-center">
-            Recording <span>{recordingDuraton}</span>
+            Recording <span>{recordingDuration}</span>
           </div>
         ) : (
           <div>
