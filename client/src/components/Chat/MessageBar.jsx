@@ -24,6 +24,8 @@ function MessageBar() {
   const [grabPhoto, setGrabPhoto] = useState(false);
   const [showAudioRecorder, setShowAudioRecorder] = useState(false);
 
+  const inputRef = useRef(null);
+
   const photoPickerChange = async (e) => {
     try {
       const file = e.target.files[0];
@@ -119,6 +121,25 @@ function MessageBar() {
     }
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "Enter") {
+        sendMessage();
+      }
+    };
+
+    const inputElement = inputRef.current;
+    if (inputElement) {
+      inputElement.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      if (inputElement) {
+        inputElement.removeEventListener("keydown", handleKeyDown);
+      }
+    };
+  }, [sendMessage]);
+
   return (
     <div className="bg-panel-header-background h-20 px-4 flex items-center gap-6 relative">
       {!showAudioRecorder && (
@@ -151,6 +172,7 @@ function MessageBar() {
               className="bg-input-background text-sm focus:outline-none text-white h-10 rounded-lg px-5 py-4 w-full"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
+              ref={inputRef}
             />
           </div>
           <div className="flex w-10 items-center justify-center">
