@@ -96,3 +96,7 @@ Finished the video. Still having issues with audio/video call. Has user online/o
 ## Day 12:
 
 Fixed the sending audio clip error. Needs to be able to send on "enter" button and delete the message/audio clip when sent.
+
+## Day 13:
+
+Able to send message on "Enter" button.
