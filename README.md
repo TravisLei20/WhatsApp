@@ -99,4 +99,4 @@ Fixed the sending audio clip error. Needs to be able to send on "enter" button a
 
 ## Day 13:
 
-Able to send message on "Enter" button.
+Able to send message on "Enter" button. Audio gets cleaned up after sent.
