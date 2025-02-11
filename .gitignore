@@ -14,9 +14,11 @@ client/yarn.lock
 server/yarn.lock
 
 server/uploads/
+
 # next.js
 client/.next/
 /out/
+client/next.config.js
 
 # production
 /build
@@ -36,3 +38,5 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+client/src/utils/FirebaseConfig.js
