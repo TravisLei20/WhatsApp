@@ -2,6 +2,12 @@
 
 [Youtube Video](https://www.youtube.com/watch?v=keYFkLycaDg&t=5507s)
 
+To run the WhatsApp have three terminals open.
+
+- In the _client_ directory run `yarn dev`.
+- In the _server_ directory run `yarn start`.
+- In the _server_ directory run `npx prisma studio`
+
 # Progress
 
 ## Day 1:
